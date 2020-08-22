@@ -1,0 +1,28 @@
+{
+    "name":"Paper Pirate",
+    "description":"This is not a drill!",
+    "version":"1.0",
+    "manifest_version":2,
+    "permissions":[
+        "activeTab"
+    ],
+    "browser_action":{
+        "default_icon":"paperpirate.png",
+        "default_title":"Open current page in Sci-Hub"
+    },
+    "background":{
+        "scripts":[
+            "popup.js"
+        ],
+        "persistent":false
+    },
+    "commands":{
+        "_execute_browser_action":{
+            "suggested_key":{
+                "default":"Ctrl+K",
+                "mac":"MacCtrl+K"
+            },
+            "description":"Opens current tab in Sci-Hub"
+        }
+    }
+}
